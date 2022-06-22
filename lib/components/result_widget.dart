@@ -13,7 +13,7 @@ class ResultWidget extends StatelessWidget implements PreferredSizeWidget {
   Color _getColor() {
     if (win == null) {
       return Colors.yellow;
-    } else if (win!) {
+    } else if (win == true) {
       return Colors.green.shade300;
     } else {
       return Colors.red.shade300;
@@ -23,7 +23,7 @@ class ResultWidget extends StatelessWidget implements PreferredSizeWidget {
   IconData _getIcon() {
     if (win == null) {
       return Icons.sentiment_satisfied;
-    } else if (win!) {
+    } else if (win == true) {
       return Icons.sentiment_very_satisfied;
     } else {
       return Icons.sentiment_very_dissatisfied;
